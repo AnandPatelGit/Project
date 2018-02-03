@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HealthMaster.master.cs" Inherits="AnandPatelProject.HealthMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+         <!--CSS From materialised CSS-->
+        <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form" runat="server">
+        <div>
+            <nav>
+                    <div class="nav-wrapper">
+                        <a href="~/HomePage.aspx" class="brand-logo">Muscles Mania</a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="~/HomePage.aspx">Home</a></li>
+                                <li><a href="~/AboutUs.aspx">About Us<!--<span class="new badge">4</span>--></a></li>
+                                <li><a href="~/ContactUs.aspx">Contact Us</a></li>
+                            </ul>
+                    </div>
+                </nav>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
